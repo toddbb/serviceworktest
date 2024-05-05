@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+:root {
+	--white0: #ffffff;
+	--white1: #fafafa;
+	--white2: #f0f0f0;
+	--gray0: #eeeeee;
+	--gray1: #dddddd;
+	--gray2: #cccccc;
+	--gray3: #aaaaaa;
+	--gray4: #808080;
+	--gray5: #666666;
+	--black0: #444444;
+	--black1: #333333;
+	--black2: #222222;
+	--black3: #101010;
+	--black4: #000000;
+	--blue0: #0000ff;
+	--blue1: #000080;
+	--blue2: #003366;
+	--blue3: #0e2f44;
+	--green0: #008000;
+	--green1: #065535;
+	--red0: #ff0000;
+	--red1: #cc0000;
+	--red2: #990000;
+	--purple0: rgb(145, 60, 145);
+	--purple1: rgb(94, 0, 94);
+	--yellow0: rgb(247, 247, 211);
+	--yellow1: rgb(236, 236, 124);
+	--light0: #f0f8ff;
+	--light1: #e6e6fa;
+	--lightblue0: rgb(211, 211, 255);
+	--lightblue1: hsl(240, 100%, 87%);
+	--lightgreen0: rgb(226, 248, 226);
+	--lightgreen1: #c9fdc9;
+	--link: #007bff;
+
+	/* Scheme 1: Professional Trust  */
+	--prof-trust-primary: #3879a9; /* Deep blue */
+	--prof-trust-secondary: #e0e7ff; /* Light gray */
+	--prof-trust-neutral: #f8f9fa; /* Very light gray */
+	--prof-trust-complimentary: #ffc107; /* Mustard yellow (contrast) */
+	--prof-trust-accent: #4caf50; /* Forest green (accent) */
+
+	/* Scheme 2: Friendly Security */
+	--friendly-security-primary: #2ecc71; /* Emerald green */
+	--friendly-security-secondary: #f1f5f8; /* Lighter gray */
+	--friendly-security-neutral: #ffffff; /* White */
+	--friendly-security-complimentary: #e84a5f; /* Light pink (contrast) */
+	--friendly-security-accent: #f1c40f; /* Orange (accent) */
+
+	/* Scheme 3: Calming Authority */
+	--calm-authority-primary: #9b59b6; /* Lavender */
+	--calm-authority-secondary: #f5f6fa; /* Lightest gray */
+	--calm-authority-neutral: #ffffff; /* White */
+	--calm-authority-complimentary: #ffc107; /* Mustard yellow (contrast) */
+	--calm-authority-accent: #3498db; /* Light blue (accent) */
+
+	/* Scheme 4: Tech Expertise */
+	--tech-expertise-primary: #34495e; /* Dark blue */
+	--tech-expertise-secondary: #e5e5e5; /* Light gray */
+	--tech-expertise-neutral: #f1f5f8; /* Lighter gray */
+	--tech-expertise-complimentary: #f1c40f; /* Orange (contrast) */
+	--tech-expertise-accent: #2ecc71; /* Emerald green (accent) */
+
+	/* Scheme 5: Modern Finance */
+	--modern-finance-primary: #3498db; /* Light blue */
+	--modern-finance-secondary: #e0e7ff; /* Light gray */
+	--modern-finance-neutral: #f8f9fa; /* Very light gray */
+	--modern-finance-complimentary: #f9a825; /* Light orange (contrast) */
+	--modern-finance-accent: #9b59b6; /* Lavender (accent) */
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	line-height: 1.6;
+	color: var(--black1);
+	background-color: var(--white0);
+}
+
+a {
+	color: var(--link);
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+ul,
+ol {
+	list-style: none;
+	list-style: none;
+	list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+}
+
+button {
+	cursor: pointer;
+}
+
+/***************************************************************************/
+/***********     STANDARD CLASSES                  *************************/
+/***************************************************************************/
+
+.h100 {
+	height: 100%;
+}
+.w100 {
+	width: 100%;
+}
+.flex,
+.flexcol {
+	display: flex;
+}
+.flexcol {
+	flex-direction: column;
+}
+.btn {
+	border: none;
+}
+
+/***************************************************************************/
+/***********             CUSTOM CLASSES                 ********************/
+/***************************************************************************/
+#images > * {
+	max-width: 1200px;
+}
+/***************************************************************************/
+/***********       CLASSES CASCADED LAST          *************************/
+/***************************************************************************/
+.nodisplay {
+	display: none !important;
+}
+
+/***************************************************************************/
+/***********         RESPONSIVE MEDIA QUERIES     *************************/
+/***************************************************************************/
+/* 
+@media only screen and (max-width: 992px) {
+	body {
+		background-color: blue;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	body {
+		background-color: green;
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	body {
+		background-color: yellow;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	body {
+		background-color: red;
+	}
+}
+ */

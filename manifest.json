@@ -1,0 +1,17 @@
+{
+   "name": "Hello World PWA",
+   "short_name": "Hello World",
+   "description": "A simple PWA displaying 'Hello World'",
+   "start_url": "/",
+   "display": "standalone",
+   "background_color": "#ffffff",
+   "theme_color": "#000000",
+   "icons": [
+     {
+       "src": "assets/favicons/favicon-32x32.png",
+       "sizes": "32x32",
+       "type": "image/png"
+     }
+   ]
+ }
+ 

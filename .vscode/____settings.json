@@ -1,0 +1,9 @@
+{
+	"liveServer.settings.root": "/",
+	"liveServer.settings.https": {
+		"enable": true,
+		"cert": "D:/Coding/simplePWA/certificate/localhost.pem",
+		"key": "D:/Coding/simplePWA/certificate/localhost.key",
+		"passphrase": "timPpIhuli"
+	}
+}
