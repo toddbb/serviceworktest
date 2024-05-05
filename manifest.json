@@ -2,7 +2,7 @@
    "name": "Hello World PWA",
    "short_name": "Hello World",
    "description": "A simple PWA displaying 'Hello World'",
-   "start_url": "/",
+   "start_url": "/serviceworkertest/",
    "display": "standalone",
    "background_color": "#ffffff",
    "theme_color": "#000000",
