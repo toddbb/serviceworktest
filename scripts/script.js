@@ -5,6 +5,7 @@ const $testImages = [
 	"https://i.imgur.com/WIrkVuG.jpeg",
 ];
 
+/// simulate loading DOM using network images and data
 const Load_Content = {
 	contentImagesParent: document.getElementById("images"),
 
@@ -23,7 +24,7 @@ const Load_Content = {
 				let imgUrl = await HttpRequest.getImage(img);
 				return imgUrl;
 			} catch (error) {
-				console.log(`[init(), getting images] Error -- ${error}`);
+				console.log(`[Load_Content.init()] Error -- ${error}`);
 			}
 		});
 
@@ -33,22 +34,23 @@ const Load_Content = {
 	},
 };
 
+/// Simulate fetch by fetching images and data on www
 const HttpRequest = {
 	async getImage(imgPath) {
 		try {
 			const response = await fetch(imgPath, this.fetchSettings);
 			const blob = await response.blob();
 			const imgUrl = URL.createObjectURL(blob);
-			console.log(`Fetched from "server": ${imgUrl}`);
+			///console.log(`Fetched from "server": ${imgUrl}`);
 			return imgUrl;
 		} catch (error) {
-			console.error("There was a problem with the fetch operation:", error);
+			console.error(`[HttpRequest.fetch()] Error -- ${error}`);
 			throw error;
 		}
 	},
 };
 
-const init = async () => {
+const init = () => {
 	console.log("The DOM is loaded.");
 	Load_Content.init();
 };
